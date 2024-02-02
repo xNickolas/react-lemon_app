@@ -10,7 +10,7 @@ const Nav = () => {
 
     return (
         <nav className={`navbar ${menuOpen ? "open" : ""}`}>
-            <a href='' className='logo'><img src={Logo} alt="Logo"></img></a>
+            <a href='/' className='logo'><img src={Logo} alt="Logo"></img></a>
 
             <div className='menu-icon' onClick={toggleMenu}>
                 <div className='bar'></div>
