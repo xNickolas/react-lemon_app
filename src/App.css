@@ -111,7 +111,7 @@ nav ul li a:hover {
   font-weight: 600;
   color: var(--yellow);
   margin: 0;
-  line-height: 0.5;
+  line-height: 42px;
 }
 
 .hero h3 {
@@ -134,12 +134,12 @@ nav ul li a:hover {
   background-color: var(--yellow);
   padding: 12px 22px;
   border: none;
-  border-radius: 16px;
-  box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.45);
+  border-radius: 22px;
+  box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.45);
 
   font-family: var(--font-Karla);
   color: black;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
   text-decoration: none;
   cursor: pointer;
@@ -165,12 +165,8 @@ nav ul li a:hover {
 /* menu items */
 
 .menu-container {
-  margin: 110px auto;
+  margin: 9em auto;
   padding: 10px 13%;
-}
-
-.menu-container h2 {
-  color: #000;
 }
 
 .menu-header {
@@ -178,9 +174,34 @@ nav ul li a:hover {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  margin-bottom: 4em;
 }
 
-.cards {
+.menu-header h2 {
+  font-family: var(--font-Markazi);
+  font-size: 64px;
+  font-weight: 600;
+  color: black;
+  margin: 0;
+  line-height: 42px;
+}
+
+.menu-header button {
+  background-color: var(--yellow);
+  padding: 12px 36px;
+  border: none;
+  border-radius: 22px;
+  box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.45);
+
+  font-family: var(--font-Karla);
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.menu-wrapper {
   margin-top: 30px;
   display: flex;
   justify-content: space-between;
@@ -190,35 +211,250 @@ nav ul li a:hover {
 }
 
 .menu-items {
-  /* height: 400px; */
-  width: 350px;
-  background: #a9c8be;
-  border-radius: 8px;
+  height: 580px;
+  width: 300px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-clip: border-box;
+  background: var(--light-gray);
+  border-radius: 16px 16px 0 0;
 }
 
-.menu-container img {
+.menu-items .card-img-top {
   width: 100%;
-  height: 233px;
-  border-radius: 8px;
+  /* height: 233px; */
+  vertical-align: middle;
+  border-radius: 16px 16px 0 0;
 }
 
 .menu-content {
-  padding: 5px 15px;
+  padding: 2rem;
+  position: relative;
+  z-index: 1;
 }
 
+.menu-content {
+  flex: 1 1 auto;
+}
 
 .menu-content .heading {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 2rem;
 }
 
-.orderbtn {
-  padding: 5px 12px;
-  margin-bottom: 20px;
+.menu-content .heading h5 {
+  font-family: var(--font-Markazi);
+  font-size: 22px;
+  color: #000;
+  line-height: 18px;
+  margin: 0;
+}
+
+.menu-content .heading p {
+  font-family: var(--font-karla);
+  font-size: 16px;
+  color: var(--orange);
+  font-weight: 600;
+  line-height: 18px;
+  margin: 0;
+}
+
+.menu-content p {
+  font-family: var(--font-karla);
+  font-size: 16px;
+  color: #868788;
+  margin-bottom: 1em;
+}
+
+.menu-content .order-btn {
+  display: flex;
+  align-items: center;
+
+  position: absolute;
+  bottom: 10%;
+
+  font-family: var(--font-karla);
   font-size: 16px;
   font-weight: 600;
+  line-height: 1;
+  color: #000;
+
+  cursor: pointer;
 }
 
+.delivery-icon {
+  width: 8%;
+  margin-left: 10px;
+}
+
+
+/* testimonials content */
+.testimonials-container {
+  margin: 0 auto;
+  padding: 6% 13%;
+  background-color: #f3efed;
+}
+
+.testimonials-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 4em;
+}
+
+.testimonials-header h2 {
+  font-family: var(--font-Markazi);
+  font-size: 40px;
+  font-weight: 600;
+  color: black;
+  margin: 0;
+  line-height: 42px;
+  text-align: center;
+}
+
+.testimonials-wrapper {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem 1rem;
+}
+
+.card {
+  position: relative;
+  border-radius: 16px;
+  background-color: white;
+  width: 215px;
+  display: flex;
+  flex-direction: column;
+  word-wrap: break-word;
+  background-clip: border-box;
+  padding: 1.2em 1.5em;
+}
+
+.card-body {
+  flex: 1 1 auto;
+}
+
+.testimonial-author {
+  display: flex;
+  margin: 20px 0 0;
+  align-items: center;
+}
+
+.star-icon {
+  width: 8%;
+}
+
+.testimonial .testimonial-author .testimonial-author-thumbnail {
+  width: auto;
+}
+
+.testimonial-author img {
+  max-width: 55px;
+  border-radius: 50% !important;
+}
+
+.testimonial-author p {
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-karla);
+  font-size: 16px;
+  color: black;
+  text-align: left;
+  line-height: 1.2;
+  margin-bottom: 0;
+  margin-top: 0;
+  margin-left: 0.8rem;
+}
+
+.testimonial-description p {
+  font-family: var(--font-karla);
+  color: #999;
+  font-size: 14px;
+}
+
+
+
+/* about content */
+
+.about-container {
+  margin: 0 auto;
+  padding: 10% 13%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.about-text {
+  flex: 0 0 auto;
+  width: 41.66666667%;
+  text-align: start;
+}
+
+.about-text h1 {
+  font-family: var(--font-Markazi);
+  font-size: 64px;
+  font-weight: 600;
+  /* color: var(--yellow); */
+  margin: 0;
+  line-height: 42px;
+}
+
+.about-text h2 {
+  font-family: var(--font-Markazi);
+  font-size: 40px;
+  font-weight: 500;
+  /* color: white; */
+  margin: 0;
+}
+
+.about-text p {
+  font-family: var(--font-Karla);
+  font-size: 20px;
+  font-weight: 500;
+  /* color: white; */
+  margin-bottom: 1em;
+}
+
+.about-img {
+  flex: 0 0 auto;
+  width: 58.33333333%;
+  text-align: end;
+  position: relative;
+}
+
+.inner {
+  position: absolute;
+  height: 250px;
+  width: 400px;
+
+  -webkit-box-shadow: -12px 11px 31px -13px rgba(0, 0, 0, 1);
+  -moz-box-shadow: -12px 11px 31px -13px rgba(0, 0, 0, 1);
+  box-shadow: -12px 11px 31px -13px rgba(0, 0, 0, 1);
+}
+
+.inner img {
+  width: 100%;
+}
+
+.inner:nth-child(1) {
+  top: -11em;
+  right: 0;
+  z-index: 1;
+}
+
+.inner:nth-child(2) {
+  bottom: -10em;
+  left: 25%;
+  z-index: 2;
+}
 
 
 /* footer content */
@@ -340,7 +576,7 @@ label {
 
   .header section,
   .menu-container {
-    padding: 10px 8%;
+    padding: 10px 13%;
   }
 
   .menu-container {
@@ -353,6 +589,7 @@ label {
 
   .menu-items {
     width: 100%;
+    height: 100%;
   }
 
   footer section {
