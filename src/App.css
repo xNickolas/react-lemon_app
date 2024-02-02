@@ -430,7 +430,69 @@ nav ul li a:hover {
   position: relative;
 }
 
-.inner {
+.inner img {
+  width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+  .about-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-text {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+
+  .about-img {
+    flex: 0 0 auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .inner {
+    text-align: center;
+  }
+
+  .inner img {
+    width: 100%;
+    margin: 1em 0;
+  }
+
+  
+}
+
+@media screen and (min-width: 1024px) {
+  .inner {
+    position: absolute;
+    height: 250px;
+    width: 400px;
+  
+    -webkit-box-shadow: -12px 11px 31px -13px rgba(0, 0, 0, 1);
+    -moz-box-shadow: -12px 11px 31px -13px rgba(0, 0, 0, 1);
+    box-shadow: -12px 11px 31px -13px rgba(0, 0, 0, 1);
+  }
+  
+  .inner img {
+    width: 100%;
+  }
+  
+  .inner:nth-child(1) {
+    top: -11em;
+    right: 0;
+    z-index: 1;
+  }
+  
+  .inner:nth-child(2) {
+    bottom: -10em;
+    left: 25%;
+    z-index: 2;
+  }
+}
+
+/* .inner {
   position: absolute;
   height: 250px;
   width: 400px;
@@ -454,30 +516,42 @@ nav ul li a:hover {
   bottom: -10em;
   left: 25%;
   z-index: 2;
-}
+} */
 
 
 /* footer content */
 
+footer {
+  background-color: var(--green);
+}
+
 footer section {
-  padding: 10px 13%;
+  padding: 3em 13%;
   display: flex;
   justify-content: space-between;
   align-items: start;
 }
 
+.company-info {
+  width: 250px;
+}
+
 .company-info img {
   margin-top: 12px;
   cursor: pointer;
-  width: 200px;
 }
 
 .company-info p {
-  width: 320px;
+  font-family: var(--font-Karla);
+  font-size: 18px;
+  color: white;
 }
 
 footer h3 {
+  font-family: var(--font-Karla);
   font-size: 18px;
+  font-weight: 800;
+  color: white;
 }
 
 footer ul {
@@ -486,6 +560,17 @@ footer ul {
 
 footer ul li {
   padding: 8px 0;
+  font-family: var(--font-Karla);
+  font-size: 14px;
+  font-weight: 300;
+  color: white;
+}
+
+footer ul li a {
+  font-family: var(--font-Karla);
+  font-size: 14px;
+  font-weight: 300;
+  color: white;
 }
 
 
@@ -573,14 +658,12 @@ label {
     padding: 10px 8%;
   }
 
-
-  .header section,
-  .menu-container {
-    padding: 10px 13%;
-  }
-
   .menu-container {
     margin: 20px 0;
+  }
+
+  .menu-header h2 {
+    margin-bottom: 0.5em;
   }
 
   .menu-header {
@@ -592,8 +675,32 @@ label {
     height: 100%;
   }
 
+  .menu-content p {
+    margin-bottom: 4em;
+}
+
+  .card {
+    width: 100%;
+  }
+
+  .testimonials-wrapper {
+    justify-content: center;
+  }
+
+  .about-img {
+    flex: 0 0 auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+  .inner img {
+    width: 100%;
+    margin: 1em 0;
+}
+
   footer section {
-    padding: 10px 8%;
     flex-direction: column;
   }
 
