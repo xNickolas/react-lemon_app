@@ -31,7 +31,7 @@ const Menu = () => {
         <div className='menu-container'>
             <div className='menu-header'>
                 <h2>This Weeks Specials</h2>
-                <button>Menu</button>
+                <button className='button-secondary'>Menu</button>
             </div>
 
             <div className='menu-wrapper'>

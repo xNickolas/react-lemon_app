@@ -1,70 +1,53 @@
-# Getting Started with Create React App
+# Little Lemon Restaurant Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to the Little Lemon Restaurant Website! This project, built with React.js, provides a delightful online experience for users to explore the restaurant, make table reservations, and even order food for delivery.
 
-## Available Scripts
+## Table of Contents
+
+- [About](#about)
+- [Menu](#menu)
+- [Reservations](#reservations)
+- [Order Online](#order-online)
+- [Basket](#basket)
+- [Images](#images)
+
+## About
+
+Discover the heart of Chicago's culinary scene with Little Lemon Restaurant. Our small family-run restaurant is dedicated to serving delicious meals with a modern twist on traditional Mediterranean recipes. Explore our cozy ambiance, warm hospitality, and a diverse menu that caters to various tastes.
+
+## Menu
+
+Check out our menu featuring a wide array of mouthwatering dishes. From the famous Greek salad to Bruschetta and delightful Lemon Desserts, we have something for every palate. Dive into a culinary journey that combines freshness and authenticity.
+
+## Reservations
+
+Experience the convenience of reserving a table at Little Lemon Restaurant. The reservation feature allows you to choose the date, time, number of guests, and specify the occasion. Whether it's a casual family dinner or a special celebration, we've got you covered.
+
+## Order Online
+
+Can't make it to the restaurant? No worries! Little Lemon offers a seamless online ordering experience. Browse through our menu, select your favorite dishes, and place an order for delivery. Enjoy the same delicious flavors from the comfort of your home.
+
+## Basket
+
+Keep track of your online orders with the Basket feature. Easily review your selected items, make adjustments, and proceed to checkout. Our user-friendly interface ensures a hassle-free ordering process.
+
+## Screenshots
+
+![Home Page](src/assets/UI/Little-Lemon.png)
+![Mobile](src/assets/UI/Mobile-1.png)
+
+## Getting Started
 
 In the project directory, you can run:
 
+### `npm install`
+
+Install dependencies.
+
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Open your browser and navigate to http://localhost:3000 to explore the Little Lemon Restaurant Website.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Contributing
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+If you'd like to contribute to the project, feel free to submit pull requests. We appreciate your help in making Little Lemon even better!

@@ -38,7 +38,7 @@ const BookingForm = (props) => {
 
                         <div>
                             <label htmlFor='book-guests'>Number of Guests:</label>
-                            <input id='book-guests' min='1' value={guests} onChange={(e) => setGuests(e.target.value)}/>
+                            <input id='book-guests' type="number" placeholder="1" min="1" max="10" value={guests} onChange={(e) => setGuests(e.target.value)}/>
                         </div>
 
                         <div>
