@@ -34,7 +34,7 @@ Keep track of your online orders with the Basket feature. Easily review your sel
 ## Screenshots
 
 ![Home Page](src/assets/UI/Little-Lemon.png)
-![Mobile](src/assets/UI/Mobile-1.png)
+![Mobile](src/assets/UI/mobile.png)
 
 ## Getting Started
 
