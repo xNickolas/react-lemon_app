@@ -325,7 +325,7 @@ nav ul li:last-child {
 
 .menu-header h2 {
   font-family: var(--font-Markazi);
-  font-size: 64px;
+  font-size: clamp(3rem, 0.3043rem + 3.4783vw, 3rem);
   font-weight: 600;
   color: black;
   margin: 0;
@@ -903,6 +903,23 @@ input[type="date"] {
   }
 
   .navbar-container {
+    min-height: 50px;
+    height: 50px;
+  }
+
+  .nav-links.visible {
+    top: 60px;
+  }
+
+  .hero {
+    margin-top: 70px;
+  }
+
+  .main {
+    margin: 0;
+  }
+
+  .navbar-container {
     width: 100%;
   }
 
@@ -1000,6 +1017,18 @@ input[type="date"] {
 
 @media screen and (max-width: 481px) {
 
+  .menu-container {
+    padding: 4em 13%;
+  }
+
+  .testimonials-container {
+    padding: 4rem 13%;
+  }
+
+  .about-container {
+    padding: 4rem 13%;
+}
+
   .col-12 {
     width: 100%;
   }
@@ -1016,6 +1045,16 @@ input[type="date"] {
   }
   .form-images img:nth-child(2), img:nth-child(3) {
     display: none;
+  }
+
+  .confirm h2 {
+    font-size: clamp(3rem, 0.3043rem + 3.4783vw, 3rem);
+  }
+  .confirm h3 {
+    font-size: clamp(1.5rem, 0.3043rem + 3.4783vw, 3rem);
+  }
+  .confirm p {
+    font-size: clamp(1rem, 0.3043rem + 3.4783vw, 3rem);
   }
 }
 
