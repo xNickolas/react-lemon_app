@@ -12,6 +12,11 @@
   --dark-gray: #333333;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+
 body {
   width: 100%;
   margin: 0 auto;
@@ -32,6 +37,7 @@ nav {
 nav ul li {
   display: inline-block;
   padding: 0.5em 1em;
+  text-align: center;
 }
 
 nav ul li a {
@@ -68,9 +74,19 @@ nav ul li a:hover {
   cursor: pointer;
 }
 
+.main {
+  margin-top: 5em;
+}
+
 .menu-icon {
   display: none;
   cursor: pointer;
+  position: absolute;
+  right: 15%;
+}
+
+.menu-icon img {
+  width: 70%;
 }
 
 .bar {
@@ -81,10 +97,50 @@ nav ul li a:hover {
 }
 
 .navbar {
-  padding: 10px 13%;
+  position: fixed;
+  height: auto !important;
+
+  display: flex;
+  flex-direction: column;
+  background: white;
+  width: 100%;
+  /* border-top: 3px solid #ededed; */
+  border-bottom: 1px solid transparent;
+  z-index: 1001;
+  box-shadow: 0px 3px 12px -4px rgba(0,0,0,0.75);
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+
+.navbar-container {
+  min-height: 80px;
+  height: 80px;
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  transition: ease height 300ms;
+  max-width: 1450px;
+  width: calc(100% - 26%);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+.navbar-row {
   display: flex;
   justify-content: space-between;
+  flex-grow: 1;
   align-items: center;
+  align-self: stretch;
+  max-height: 100%;
 }
 
 .nav-links {
@@ -128,8 +184,8 @@ nav ul li:last-child {
 .nav-links.visible {
   flex-direction: column;
   position: absolute;
-  top: 40px;
-  right: 0;
+  top: 87px;
+  right: 8%;
   width: 100%;
   background-color: #495E57;
   display: flex;
@@ -140,13 +196,14 @@ nav ul li:last-child {
 
 
 
-
 /* header section */
 
 .hero {
+  margin-top: 80px; /* Adicione o espaço extra aqui */
   background-color: #495e57;
   padding: 40px 0;
 }
+
 
 .hero section {
   color: #EDEFEE;
@@ -203,8 +260,8 @@ nav ul li:last-child {
 /* menu items */
 
 .menu-container {
-  margin: 9em auto;
-  padding: 10px 13%;
+  margin: 0 auto;
+  padding: 9em 13%;
 }
 
 .menu-header {
@@ -548,6 +605,24 @@ footer ul li a {
 
 /* form content */
 
+.hero {
+  margin-top: 80px; /* Adicione o espaço extra aqui */
+  background-color: #495e57;
+  padding: 40px 0;
+}
+
+
+.hero-form {
+  color: #EDEFEE;
+  padding: 20px 13%;
+  position: relative;
+}
+
+.form-container {
+  width: 100%;
+  padding: 2em 0;
+}
+
 
 form,
 .comfirm {
@@ -591,6 +666,34 @@ label {
 }
 
 @media screen and (max-width: 1024px) {
+  .navbar-container {
+    width: 90%;
+  }
+  .nav-links .order-nav-link {
+    background: none;
+    color: black;
+    font-size: 14px;
+    box-shadow: none;
+    padding: 0;
+  }
+
+  .icon-basket {
+    filter: invert(100%);
+  }
+
+  .banner-img {
+    position: absolute;
+    right: 0%;
+    top: 16%;
+    width: auto;
+  }
+
+  .banner-img img {
+    width: 85%;
+    height: 365px;
+    border-radius: 15px;
+  }
+
   .about-container {
     display: flex;
     flex-direction: column;
@@ -651,6 +754,10 @@ label {
 @media screen and (max-width: 768px) {
   .menu-icon {
     display: block;
+  }
+
+  .navbar-container {
+    width: 100%;
   }
 
   .nav-links {
@@ -744,7 +851,6 @@ label {
     width: 100%;
   }
 }
-
 
 @media screen and (min-width: 481px) {
   footer section {

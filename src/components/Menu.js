@@ -28,7 +28,7 @@ const Menu = () => {
     }
 
     return (
-        <div className='menu-container'>
+        <div className='menu-container' id='menu'>
             <div className='menu-header'>
                 <h2>This Weeks Specials</h2>
                 <button className='button-secondary'>Menu</button>

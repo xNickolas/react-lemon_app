@@ -4,7 +4,7 @@ import starIcon from '../assets/icon-star.png';
 
 const Testimonials = () => {
     return (
-        <div className='testimonials-container'>
+        <div className='testimonials-container' id='testimonials'>
             <div className='testimonials-header'>
                 <h2>What our costumers say!</h2>
             </div>

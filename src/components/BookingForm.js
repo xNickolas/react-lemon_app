@@ -18,7 +18,16 @@ const BookingForm = (props) => {
 
     return (
         <header>
-            <section>
+            <section className='hero'>
+                <div className='hero-form'>
+                    <h2>Little Lemon</h2>
+                    <h3>Chicago</h3>
+                    <p>
+                        Reserve your table below, fill in the form with the details of your occasion and we'll send the confirmation to your e-mail address
+                    </p>
+                </div>
+            </section>
+            <section className='form-container'>
                 <form onSubmit={handleSubmit}>
                     <fieldset>
                         <div>
@@ -38,7 +47,7 @@ const BookingForm = (props) => {
 
                         <div>
                             <label htmlFor='book-guests'>Number of Guests:</label>
-                            <input id='book-guests' type="number" placeholder="1" min="1" max="10" value={guests} onChange={(e) => setGuests(e.target.value)}/>
+                            <input id='book-guests' type="number" placeholder="1" min="1" max="10" value={guests} onChange={(e) => setGuests(e.target.value)} />
                         </div>
 
                         <div>
@@ -50,7 +59,7 @@ const BookingForm = (props) => {
                         </div>
 
                         <div className='btnReceive'>
-                            <input aria-label='On Click' type='submit' value={"Make your reservation"}/>
+                            <input aria-label='On Click' type='submit' value={"Make your reservation"} />
                         </div>
                     </fieldset>
                 </form>
